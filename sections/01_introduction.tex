@@ -1,0 +1,23 @@
+\section{Introduction}
+\label{sec:introduction}
+This project aims to research how are machine learning models applied to economic theory, particularly to economical cycles. The project is reproducible pipeline and aims to provide extendible dataset, which being collected from the FRED API. Project has examples of two trained models LSTM and XGBoost, however XGBoost model is the primary and report will stick to it. The project applies processing into data collection and addresses disadvantages of governmental data, often having limited access points. Project highly uses explainability via SHAP plot and provides interface to inspect model output via Streamlit.
+
+\subsection{Research questions}
+\label{sec:question}
+Research aims to answer following questions and points: \textbf{Possibility of better forecasting} by accounting for the publication lag, \textbf{Indicators and features} which are bringing the most input to the prediction of GDP and classification of cycles, \textbf{Ability} of simple and transparent labels (recession, expansion, recovery, slowdown) to describe complex economic cycles.
+
+\subsection{Research gaps}
+\label{sec:question}
+Traditional many macroeconomic papers has been relying on linear machine learning models, like ARIMA (Auto Regressive Integrated Moving Average) and DFMs (Dynamic Factor Models). Only couple of recent papers research effectiveness of Recurrent Neural Network like LSTM.  
+Research paper \textit{Text-Based Economic Forecasting with Topics, Sentiment, and Uncertainty. (2024)}\cite{okuneva2025text},  focuses on training LSTM model, to manage high dimensional text data coming from magazines, newspapers. This paper focuses on forecasting and high accuracy of metrics, however reproducibility and conversion into accessible tools might be development area.
+
+Classification of economical cycles is usually performed using \text{Markov-Switching}, however gradient boosting algorithms show better outcomes.
+Research papers \textit{Forecasting Inflation with Machine Learning (2021)}\cite{Medeiros02012021} and \textit{Turning Point Detection}\cite{poser2003} focuses on use Random Forest algorithms and XGBoost, provided studies emphasize that this models show higher precision.
+This research papers focus on binary outcome of classification "recession", "inflation". This project uses four stages: expansion, slowdown, recovery, recession, thus providing more granular output and classifications.
+
+Deep and machine learning models are black boxes and do not show which feature is important transparently. With the help of XAI users can clearly see which data is important and contribute.
+This research \textit{Machine Learning Explainability in Finance: An Application to Default Risk Analysis (2019)}\cite{bracke2019machine} focuses on Shapley Additive Explanations. Development areas of this paper might be inclusion of plots directly into user interface.
+
+
+
+\newpage
