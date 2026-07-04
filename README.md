@@ -72,6 +72,12 @@ Upload the whole folder to [Overleaf](https://www.overleaf.com), set `report.tex
 
 ---
 
+## Counting total amount of words 
+
+```bash
+    texcount -inc -total report.tex
+```
+
 ## Getting Started
 
 1. Edit `sections/00_front_page.tex` — fill in your name, title, course, etc.
